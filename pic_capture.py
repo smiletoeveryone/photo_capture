@@ -72,25 +72,25 @@ while True:
     if key == ord('q'):
         break
 # 8. image saving
-showPic = cv2.imwrite("/home/fiftycentsjj/Downloads/filename.jpg",frame)
+showPic = cv2.imwrite("path of image",frame)
 print(showPic)
 
 # 9. image showing
-img = cv2.imread("/home/fiftycentsjj/Downloads/filename.jpg")
+img = cv2.imread(""path of image"")
 cv2.imshow('image', img)
 cv2.waitKey(0)
 
 '''
 # 10. qrcode showing
 
-qrcode_pic = qrcode.make("/home/fiftycentsjj/Downloads/filename.jpg")
+"path of image"qrcode_pic = qrcode.make(""path of image"")
 
 print(type(qrcode_pic))
 print(qrcode_pic.size)
 # <class 'qrcode.image.pil.PilImage'>
 # (290, 290)
 
-qrcode.save('"/home/fiftycentsjj/Downloads/qrcode_test.png')
+qrcode.save('path of qrcode_test.png')
 
 '''
 
